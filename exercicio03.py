@@ -1,14 +1,14 @@
 while True:
     try:
         print('')
-        valor_1 = float(input('Digite o primeiro número: '))
+        valor_1 = int(input('Digite o primeiro número: '))
         break
     except ValueError:
         print('Digite um valor númérico válido.')
 
 while True:
     try:
-        valor_2 = float(input('Digite o segundo número: '))
+        valor_2 = int(input('Digite o segundo número: '))
         break
     except ValueError:
         print('Digite um valor númérico válido.')
