@@ -2,7 +2,7 @@ print('')
 
 while True:
     try:
-        valor_1 = float(input('Digite um número: '))
+        valor_1 = int(input('Digite um número: '))
         break
     except ValueError:
         print('Número inválido.\n')
