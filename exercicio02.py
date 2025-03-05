@@ -2,7 +2,7 @@ while True:
     try:
         valor_1 = float(input('Digite um valor: '))
         break
-    except:
+    except ValueError:
         print('')
         print('Digite um valor numérico válido.\n')
 
