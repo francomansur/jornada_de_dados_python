@@ -1,3 +1,7 @@
+"""
+    05. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
+"""
+
 print('')
 
 while True:

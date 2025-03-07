@@ -1,4 +1,9 @@
+"""
+    10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
+"""
+
 print('')
+
 while True:
     try:
         raio = float(input('Digite o raio do círculo: '))

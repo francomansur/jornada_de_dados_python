@@ -1,3 +1,9 @@
+"""
+    02. Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
+"""
+
+print('')
+
 while True:
     try:
         valor_1 = int(input('Digite um valor: '))

@@ -1,4 +1,9 @@
+"""
+    07. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
+"""
+
 print('')
+
 while True:
     try:
         valor_1 = float(input('Digite o primeiro número: '))
