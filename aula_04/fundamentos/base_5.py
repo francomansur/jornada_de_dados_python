@@ -1,3 +1,4 @@
+numeros = []
 numeros_pares = []
 numeros_impares = []
 
@@ -11,6 +12,7 @@ while True:
         if (int(numero) == 0):
             raise ValueError
         elif numero.isdigit():
+            numeros.append(int(numero))
             if (int(numero) % 2 == 0):
                 numeros_pares.append(int(numero))
             else:
@@ -19,5 +21,6 @@ while True:
     except ValueError:
         print('Valor inválido\n')
 
-print(f'\nNúmeros pares: {sorted(numeros_pares)}')
+print(f'\nNúmeros: {sorted(numeros)}')
+print(f'Números pares: {sorted(numeros_pares)}')
 print(f'Números ímpares: {sorted(numeros_impares)}\n')
