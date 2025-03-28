@@ -1,4 +1,4 @@
-# Exercícios Aula 2 BootCamp Python Jornada de Dados
+# Exercícios Aula 3 BootCamp Python Jornada de Dados
 
 ## Exercício 1: Verificação de Qualidade de Dados
  Você está analisando um conjunto de dados de vendas e precisa garantir 
