@@ -1,11 +1,11 @@
-"""    
-    Exercício 6: Contagem de Palavras em Textos
-    Dado um texto, contar quantas vezes cada palavra única aparece nele.
+"""
+Exercício 6: Contagem de Palavras em Textos
+Dado um texto, contar quantas vezes cada palavra única aparece nele.
 """
 
-print('')
+print("")
 
-texto = str(input('Digite seu texto: '))
+texto = str(input("Digite seu texto: "))
 
 texto_palavras = texto.lower().split()
 texto_count = {}
@@ -20,4 +20,4 @@ print("\nContagem de palavras:")
 for palavra, contagem in texto_count.items():
     print(f"{palavra}: {contagem}")
 
-print('')
+print("")

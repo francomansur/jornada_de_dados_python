@@ -4,6 +4,7 @@ import time
 
 from pathlib import Path
 
+
 def processar_temperaturas(path_do_txt: Path):
     print("Iniciando o processamento do arquivo.")
     start_time = time.time()  # Tempo de início
@@ -32,8 +33,8 @@ def processar_temperaturas(path_do_txt: Path):
         temperatura_por_station[nome_da_station].append(temperatura)
     """
 
-    with open(path_do_txt, 'r', encoding="utf-8") as file:
-        _reader = reader(file, delimiter=';')
+    with open(path_do_txt, "r", encoding="utf-8") as file:
+        _reader = reader(file, delimiter=";")
         for row in _reader:
             nome_da_station, temperatura = str(row[0]), float(row[1])
             temperatura_por_station[nome_da_station].append(temperatura)
@@ -55,12 +56,16 @@ def processar_temperaturas(path_do_txt: Path):
     sorted_results = dict(sorted(results.items()))
 
     # Formatando os resultados para exibição
-    formatted_results = {station: f"{min_temp:.1f}/{mean_temp:.1f}/{max_temp:.1f}" for station, (min_temp, mean_temp, max_temp) in sorted_results.items()}
+    formatted_results = {
+        station: f"{min_temp:.1f}/{mean_temp:.1f}/{max_temp:.1f}"
+        for station, (min_temp, mean_temp, max_temp) in sorted_results.items()
+    }
 
     end_time = time.time()  # Tempo de término
     print(f"Processamento concluído em {end_time - start_time:.2f} segundos.")
 
     return formatted_results
+
 
 # Substitua "data/measurements10M.txt" pelo caminho correto do seu arquivo
 if __name__ == "__main__":
