@@ -1,16 +1,16 @@
 """
-    10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
+10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
 """
 
-print('')
+print("")
 
 while True:
     try:
-        raio = float(input('Digite o raio do círculo: '))
+        raio = float(input("Digite o raio do círculo: "))
         break
     except ValueError:
-        print('O valor digitado não é um número.\n')
+        print("O valor digitado não é um número.\n")
 
 area = 3.1416 * (raio**2)
 
-print(f'A área do círculo com raio de {raio} é {area:.2f}.\n')
+print(f"A área do círculo com raio de {raio} é {area:.2f}.\n")

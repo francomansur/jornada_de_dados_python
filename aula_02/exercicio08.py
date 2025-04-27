@@ -1,23 +1,23 @@
 """
-    08. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
+08. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
 """
 
-print('')
+print("")
 
 while True:
     try:
-        base = float(input('Digite a base da potencia: '))
+        base = float(input("Digite a base da potencia: "))
         break
     except ValueError:
-        print('O valor digitado não é um número.\n')
+        print("O valor digitado não é um número.\n")
 
 while True:
     try:
-        expoente = float(input('Digite o expoente da potencia: '))
+        expoente = float(input("Digite o expoente da potencia: "))
         break
     except ValueError:
-        print('O valor digitado não é um número.\n')
+        print("O valor digitado não é um número.\n")
 
-resultado = base ** expoente
+resultado = base**expoente
 
-print(f'A potencia de {base} ^ {expoente} é {resultado}.\n')
+print(f"A potencia de {base} ^ {expoente} é {resultado}.\n")

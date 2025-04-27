@@ -1,15 +1,15 @@
 """
-    21. Conversor de Temperatura Celsius/Fahrenheit
+21. Conversor de Temperatura Celsius/Fahrenheit
 """
 
-print('')
+print("")
 while True:
     try:
-        celsius = float(input('Digite a temperatura em Graus Celsius: '))
+        celsius = float(input("Digite a temperatura em Graus Celsius: "))
         break
     except ValueError:
-        print('O valor digitado não é um número.\n')
+        print("O valor digitado não é um número.\n")
 
-fahrenheit = (celsius * 9/5) + 32
+fahrenheit = (celsius * 9 / 5) + 32
 
-print(f'{celsius} Graus Celsius é igual a {fahrenheit} Fahrenheits.\n')
+print(f"{celsius} Graus Celsius é igual a {fahrenheit} Fahrenheits.\n")

@@ -1,17 +1,17 @@
 """
-    12. Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
+12. Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
 """
 
-print('')
+print("")
 
 while True:
     try:
-        nome = str(input('Digite seu nome: '))
+        nome = str(input("Digite seu nome: "))
         if nome.replace(" ", "").isalpha():
             break
         else:
             raise ValueError
     except ValueError:
-        print('Nome inválido.\n')
+        print("Nome inválido.\n")
 
-print(f'Nome em maiúsculo: {nome.upper()}.\n')
+print(f"Nome em maiúsculo: {nome.upper()}.\n")

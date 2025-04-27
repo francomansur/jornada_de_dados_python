@@ -1,16 +1,16 @@
 """
-    05. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
+05. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
 """
 
-print('')
+print("")
 
 while True:
     try:
-        valor_1 = int(input('Digite um número: '))
+        valor_1 = int(input("Digite um número: "))
         break
     except ValueError:
-        print('Número inválido.\n')
+        print("Número inválido.\n")
 
 quadrado = valor_1 * valor_1
 
-print(f'O quadrado de {valor_1} é {quadrado}\n')
+print(f"O quadrado de {valor_1} é {quadrado}\n")
