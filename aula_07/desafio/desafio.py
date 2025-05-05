@@ -49,3 +49,4 @@ path = "/Users/francomansur/Documents/jornada_de_dados/python/aula_07/desafio/da
 raw_data = ler_csv(path)
 produtos_categoria = processar_dados(raw_data)
 vendas_categoria = calcular_vendas_categoria(produtos_categoria)
+print(vendas_categoria)
